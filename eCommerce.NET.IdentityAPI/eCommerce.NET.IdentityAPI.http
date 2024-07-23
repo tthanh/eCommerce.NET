@@ -1,0 +1,6 @@
+@eCommerce.NET.IdentityAPI_HostAddress = http://localhost:5223
+
+GET {{eCommerce.NET.IdentityAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -22,26 +22,6 @@
         }
       }
     },
-    "angular": {
-      "type": "dockerfile.v0",
-      "path": "../eCommerce.NET.Angular/Dockerfile",
-      "context": "../eCommerce.NET.Angular",
-      "env": {
-        "NODE_ENV": "production",
-        "services__weatherapi__http__0": "{weatherapi.bindings.http.url}",
-        "services__weatherapi__https__0": "{weatherapi.bindings.https.url}",
-        "PORT": "{angular.bindings.http.targetPort}"
-      },
-      "bindings": {
-        "http": {
-          "scheme": "http",
-          "protocol": "tcp",
-          "transport": "http",
-          "targetPort": 8000,
-          "external": true
-        }
-      }
-    },
     "react": {
       "type": "dockerfile.v0",
       "path": "../eCommerce.NET.React/Dockerfile",
@@ -58,26 +38,6 @@
           "protocol": "tcp",
           "transport": "http",
           "targetPort": 8001,
-          "external": true
-        }
-      }
-    },
-    "vue": {
-      "type": "dockerfile.v0",
-      "path": "../eCommerce.NET.Vue/Dockerfile",
-      "context": "../eCommerce.NET.Vue",
-      "env": {
-        "NODE_ENV": "production",
-        "VITE_WEATHER_API_HTTP": "{weatherapi.bindings.http.url}",
-        "VITE_WEATHER_API_HTTPS": "{weatherapi.bindings.https.url}",
-        "PORT": "{vue.bindings.http.targetPort}"
-      },
-      "bindings": {
-        "http": {
-          "scheme": "http",
-          "protocol": "tcp",
-          "transport": "http",
-          "targetPort": 8002,
           "external": true
         }
       }
