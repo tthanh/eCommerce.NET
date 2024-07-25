@@ -17,7 +17,12 @@ var weatherApi = builder.AddProject<Projects.eCommerce_NET_MinimalApi>("weathera
 var basketApi = builder.AddProject<Projects.eCommerce_NET_BasketAPI>("basket-api")
     .WithReference(redis)
     .WithReference(rabbitMq);
-    //.WithEnvironment("Identity__Url", identityEndpoint);
+//.WithEnvironment("Identity__Url", identityEndpoint);
+
+var api = builder.AddProject<Projects.eCommerce_NET_API>("api")
+    .WithReference(basketApi)
+    .WithReference(identityApi)
+    .WithExternalHttpEndpoints();
 
 builder.AddNpmApp("react", "../eCommerce.NET.React")
     .WithReference(weatherApi)
@@ -25,7 +30,5 @@ builder.AddNpmApp("react", "../eCommerce.NET.React")
     .WithHttpEndpoint(env: "PORT")
     .WithExternalHttpEndpoints()
     .PublishAsDockerFile();
-
-builder.AddProject<Projects.eCommerce_NET_BasketAPI>("ecommerce-net-basketapi");
 
 builder.Build().Run();

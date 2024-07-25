@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eCommerce.NET.IdentityAPI",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E6C61279-E13B-4685-975F-016C79947141}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eCommerce.NET.IdentityAPI.Test", "Tests\eCommerce.NET.IdentityAPI.Test\eCommerce.NET.IdentityAPI.Test.csproj", "{EE74AFC3-32B2-463E-9358-FBE3CBAB6B93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eCommerce.NET.IdentityAPI.Test", "Tests\eCommerce.NET.IdentityAPI.Test\eCommerce.NET.IdentityAPI.Test.csproj", "{EE74AFC3-32B2-463E-9358-FBE3CBAB6B93}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eCommerce.NET.BasketAPI", "eCommerce.NET.BasketAPI\eCommerce.NET.BasketAPI.csproj", "{DE7F5F87-3E11-4F3A-9314-7212BC70DFB5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eCommerce.NET.API", "eCommerce.NET.API\eCommerce.NET.API.csproj", "{97FDB88C-43CE-4013-A43F-BABA87A2241D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{DE7F5F87-3E11-4F3A-9314-7212BC70DFB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE7F5F87-3E11-4F3A-9314-7212BC70DFB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE7F5F87-3E11-4F3A-9314-7212BC70DFB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97FDB88C-43CE-4013-A43F-BABA87A2241D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97FDB88C-43CE-4013-A43F-BABA87A2241D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97FDB88C-43CE-4013-A43F-BABA87A2241D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97FDB88C-43CE-4013-A43F-BABA87A2241D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

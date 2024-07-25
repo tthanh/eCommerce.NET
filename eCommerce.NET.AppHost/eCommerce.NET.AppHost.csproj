@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\eCommerce.NET.API\eCommerce.NET.API.csproj" />
     <ProjectReference Include="..\eCommerce.NET.BasketAPI\eCommerce.NET.BasketAPI.csproj" />
     <ProjectReference Include="..\eCommerce.NET.IdentityAPI\eCommerce.NET.IdentityAPI.csproj" />
     <ProjectReference Include="..\eCommerce.NET.MinimalApi\eCommerce.NET.MinimalApi.csproj" />
